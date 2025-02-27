@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Página utilizando forms</title>
+    <link> rel="stylesheet" href="Exercício2.css"
+</head>
+
+<body>
+    <main>
+        <div id="formulario">
+            <form action="">
+                <section>
+                    ,<fieldset>
+                        <legend>Informações pessoais do aluno</legend>
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="none" required size="50" maxlenght="50"
+                            pattern="[a-zA-Z]{1,50}" autofocus />
+                        <br>
+                        <br>
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email">
+                        <br>
+                        <br>
+                        <label>Sexo</label>
+                        <br>
+                        <input type="radio" id="masculino" name="sexo" value="M" checked>
+                        <label>Masculino</label>
+                        <input type="radio" id="feminino" name="sexo" value="F" checked>
+                        <label>Feminino</label>
+                        <input type="radio" id="outro" name="sexo" value="O" checked>
+                        <label>Outro</label>
+                        <br>
+                        <br>
+                        <label>Passatempos:</label>
+                        <br>
+                        <input type="checkbox" id="passatempo1" name="passatempos" value="ler">
+                        <label>Ler</label>
+                        <input type="checkbox" id="passatempo2" name="passatempos" value="esporte">
+                        <label>Praticar esportes</label>
+                        <input type="checkbox" id="passatempo3" name="passatempos" value="viagem">
+                        <label>Viajar</label>
+                        <input type="checkbox" id="passatempo4" name="passatempos" value="dormir">
+                        <label>Dormir</label>
+                        <p>
+                            <label> Cor favorita </label>
+                            <input type="color" id="cor" name="cor" value "#ff0000">
+                        </p>
+
+                        <br>
+                        <br>
+                        <input type="submit" value="Enviar">
+                        <button type="reset">Limpar</button>
+                    </fieldset>
+                    
+                    <br>
+                    <br>
+                    <fieldset>
+                        <legend>Deixe aqui alguma informação que julgar necessária</legend>
+                        <label>Mensagem</label>
+                        <textarea name="mensagem" id="mensagem" cols="50" rows="5"
+                        placeholder="vazio"></textarea>
+                        <br>
+                        <br>
+                        <label>País</label>
+                        <select name="pais" id="pais">
+                            <option value="">Selecione</option>
+                            <option value="brasil">Brasil</option>
+                            <option value="eua">EUA</option>
+                            <option value="portugal">Portugal</option>
+                            <option value="espanha">Espanha</option>                            
+                        </select>
+                        <br>
+                        <br>
+                        <button type="button">Cancelar</button>
+                    </fieldset>
+                </section>
+            </form>
+        </div>
+    </main>
+    <footer class="rodape">Página criada na aula de PWEB - Direitos reservados - 2025</footer>
+</body>
+
+</html>
