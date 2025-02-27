@@ -1,0 +1,103 @@
+body {
+    background-color: #ffffff;
+    color: #333333;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+a {
+    color: #4caf50;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #388e3c;
+}
+
+header {
+    background-color: #ff9800;
+    color: #ffffff;
+    padding: 10px 20px;
+}
+
+nav {
+    background-color: #8bc34a;
+    float: left;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    margin-bottom: 0;
+}
+
+nav ul li a {
+    display: inline-block;
+    margin-right: 10xp;
+}
+
+nav ul li a {
+    padding: 5px 10px;
+}
+
+nav ul li a:hover {
+    color: #689f38;
+}
+
+section {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    padding: 20px;
+}
+
+aside {
+    background-color: #ff9800;
+    color: #333333;
+    padding: 20px;
+    margin: 20px 0;
+    float: right;
+    width: 25%;
+}
+
+footer {
+    background-color: #4caf50;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-align: right;
+}
+
+ul li {
+    ist-style-type: circle;
+    color: #4caf50;
+}
+
+ol li {
+    color: #4caf50
+}
+
+pre {
+    background-color: #e0e0e0;
+    color: #333333;
+    padding: 5px 10px;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    border: 1px solid #e0e0e0;
+    max-width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+figure figcaption {
+    texte-align: center;
+}
+
+table {
+    border: 1px solid black;
+}
+
+table tr {
+    align-content: center;
+}
