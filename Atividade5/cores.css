@@ -1,0 +1,107 @@
+.cores-div {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+h2 {
+    margin: 0;
+    visibility: hidden;
+}
+
+@m
+a.cores-div {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+h2 {
+    margin: 0;
+    visibility: hidden;
+}
+
+@media (max-width: 420px) {
+    .cores-div {
+        background-color: gray;
+    }
+    h2::before {
+        content: "Cinza";
+        visibility: visible;
+        color: white;
+    }
+}
+
+@media (min-width: 421px) and (max-width: 768px) {
+    .cores-div {
+        background-color: orange;
+    }
+    h2::before {
+        content: "Laranja";
+        visibility: visible;
+        color: white;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .cores-div {
+        background-color: pink;
+    }
+    h2::before {
+        content: "Rosa";
+        visibility: visible;
+        color: black;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1079px) {
+    .cores-div {
+        background-color: rgba(255, 0, 93, 0.626);
+    }
+    h2::before {
+        content: "Pink";
+        visibility: visible;
+        color: white;
+    }
+}
+
+@media (min-width: 1079px) and (max-width: 1366px) {
+    .cores-div {
+        background-color: purple;
+    }
+    h2::before {
+        content: "Roxo";
+        visibility: visible;
+        color: white;
+    }
+}
+
+@media (min-width: 1367px) and (max-width: 1920px) {
+    .cores-div {
+        background-color: yellow;
+    }
+    h2::before {
+        content: "Amarelo";
+        visibility: visible;
+        color: white;
+    }
+}
+
+@media (min-width: 1921px) {
+    .cores-div {
+        background-color: green;
+    }
+    h2::before {
+        content: "Verde";
+        visibility: visible;
+        color: white;
+    }
+}
