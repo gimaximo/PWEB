@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliação de Filme</title>
+    <script src="atividade8.js" defer></script>
+</head>
+<body>
+
+    <h2>Participe da Pesquisa sobre o Filme</h2>
+
+    <p>Preencha os dados abaixo:</p>
+
+    <label for="idade">Idade: 
+        <input type="number" id="idade" name="idade">
+    </label>
+
+    <label for="sexo">Sexo: 
+        <select id="sexo" name="sexo">
+            <option value="Feminino">Feminino</option>
+            <option value="Masculino">Masculino</option>
+            <option value="Outro">Outro</option>
+        </select>
+    </label>
+
+    <label for="opiniao">Qual a sua opinião sobre o filme? 
+        <select id="opiniao" name="opiniao">
+            <option value="4">Excelente</option>
+            <option value="3">Bom</option>
+            <option value="2">Regular</option>
+            <option value="1">Ruim</option>
+        </select>
+    </label>
+
+    <button onclick="registrar()">Enviar Resposta</button>
+
+    <h3>Resultados da Pesquisa:</h3>
+    <p id="resultados"></p>
+
+</body>
+</html>
