@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 14</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+
+        h1, h2 {
+            font-family: 'Georgia', serif;
+        }
+
+        input, button {
+            font-family: 'Verdana', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Altere o texto para Maiúsculas ou Minúsculas</h1>
+
+    <input type="text" id="texto" placeholder="Digite aqui seu texto">
+    <br><br>
+
+    <label>
+        <input type="radio" name="transformacao" value="maiusculas" id="maiusculas">
+        Maiúsculas
+    </label>
+    <br>
+
+    <label>
+        <input type="radio" name="transformacao" value="minusculas" id="minusculas">
+        Minúsculas
+    </label>
+    <br><br>
+
+    <button id="transformar">Aplicar</button>
+
+    <h2 id="resultado"></h2>
+
+    <script>
+        const textoInput = document.getElementById('texto');
+        const resultado = document.getElementById('resultado');
+        const transformarBtn = document.getElementById('transformar');
+
+        transformarBtn.addEventListener('click', () => {
+            const texto = textoInput.value;
+            if (document.getElementById('maiusculas').checked) {
+                resultado.textContent = texto.toUpperCase(); 
+            } else if (document.getElementById('minusculas').checked) {
+                resultado.textContent = texto.toLowerCase();
+            } else {
+                resultado.textContent = 'Selecione uma opção para transformar o texto.';
+            }
+        });
+    </script>
+</body>
+</html>
