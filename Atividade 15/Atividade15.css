@@ -1,0 +1,41 @@
+body {
+    background-color: #00cfff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+form {
+    width: 400px;
+    margin: 0 auto;
+    background-color: #00cfff;
+    padding: 20px;
+    text-align: left; /* Alinha conteúdo à esquerda */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.radio-group {
+    margin-top: 5px;
+}
+
+.radio-group label {
+    font-weight: normal;
+    margin-right:

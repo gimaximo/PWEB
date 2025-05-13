@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculadora de Média - Estudantes</title>
+  <link rel="stylesheet" href="AtividadeExtra2.css">
+</head>
+<body>
+  <h1>Cálculo de Média dos Estudantes</h1>
+  
+  <form id="formCadastro">
+    <label for="nomeCompleto">Nome Completo:</label>
+    <input type="text" id="nomeCompleto" required><br>
+
+    <label for="numeroRa">RA (5 dígitos):</label>
+    <input type="text" id="numeroRa" required><br>
+
+    <label for="notaPrimeiroTrimestre">Nota 1:</label>
+    <input type="number" id="notaPrimeiroTrimestre" step="0.1" required><br>
+
+    <label for="notaSegundoTrimestre">Nota 2:</label>
+    <input type="number" id="notaSegundoTrimestre" step="0.1" required><br>
+
+    <label for="notaTerceiroTrimestre">Nota 3:</label>
+    <input type="number" id="notaTerceiroTrimestre" step="0.1" required><br>
+
+    <button type="submit">Registrar Estudante</button>
+  </form>
+
+  <div id="exibicaoEstudantes"></div>
+  <div id="resultadoMedia"></div>
+
+  <script src="CalculadoraMedia.js"></script>
+</body>
+</html>
