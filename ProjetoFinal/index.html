@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Film Box 🎬 - Meus Filmes</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <h1>Film Box 🎬</h1>
+  </header>
+
+  <main class="main-layout">
+    <section class="left-column">
+      <h2>Adicionar filme</h2>
+      <div class="search-container">
+        <input type="text" id="search" placeholder="Pesquise um filme pelo título" aria-label="Pesquise um filme pelo título" />
+        <div id="api-search-results" class="api-search-results">
+          <p class="mensagem-vazia-pequena">Comece a digitar para pesquisar filmes na API.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="right-column">
+      <h2>Meus filmes</h2>
+      <div id="lista-filmes">
+        <p class="mensagem-vazia">Carregando filmes...</p>
+      </div>
+    </section>
+  </main>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

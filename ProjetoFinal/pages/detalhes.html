@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Film Box - Detalhes do Filme</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="icon" href="../favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <header>
+    <h1>Detalhes do Filme</h1>
+    <a href="../index.html">← Voltar para Meus Filmes</a>
+  </header>
+
+  <main>
+    <form id="form-edicao">
+      <input type="hidden" name="id" />
+      <input type="hidden" name="poster" />
+      <input type="hidden" name="idTmdb" />
+
+      <div id="poster-display">
+      </div>
+      
+      <div id="additional-info-display">
+      </div>
+
+      <label for="detalhe-titulo">Título:</label>
+      <input type="text" id="detalhe-titulo" name="titulo" required />
+
+      <label for="detalhe-diretor">Diretor:</label>
+      <input type="text" id="detalhe-diretor" name="diretor" />
+
+      <label for="detalhe-ano">Ano:</label>
+      <input type="number" id="detalhe-ano" name="ano" />
+
+      <label for="detalhe-genero">Gênero:</label>
+      <input type="text" id="detalhe-genero" name="genero" />
+
+      <label for="detalhe-duracao">Duração (minutos):</label>
+      <input type="number" id="detalhe-duracao" name="duracao" />
+
+      <label for="detalhe-elenco">Elenco:</label>
+      <input type="text" id="detalhe-elenco" name="elenco" />
+
+      <label for="detalhe-classificacao">Classificação:</label>
+      <input type="text" id="detalhe-classificacao" name="classificacao" />
+
+      <label for="detalhe-sinopse">Sinopse:</label>
+      <textarea id="detalhe-sinopse" name="sinopse"></textarea>
+
+      <label for="detalhe-nota">Sua Nota (0 a 5):</label>
+      <input type="number" id="detalhe-nota" name="notaUsuario" min="0" max="5" />
+
+      <label for="detalhe-dataAdicao">Data de Adição:</label>
+      <input type="date" id="detalhe-dataAdicao" name="dataAdicao" />
+
+      <div class="botoes">
+        <button type="submit">Salvar Alterações</button>
+        <button type="button" id="btn-excluir">Excluir Filme</button>
+      </div>
+    </form>
+  </main>
+
+  <script type="module" src="../js/main.js"></script>
+</body>
+</html>

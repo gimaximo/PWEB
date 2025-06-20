@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Film Box - Adicionar Filme</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <header>
+    <h1>Adicionar Filme</h1>
+    <a href="../index.html">← Voltar para Meus Filmes</a>
+  </header>
+
+  <main>
+    <form id="form-filme">
+      <input type="hidden" name="idTmdb" />
+      <input type="hidden" name="poster" />
+      
+      <label for="titulo">Título:</label>
+      <input type="text" id="titulo" name="titulo" placeholder="Título do filme (ex: Interestelar)" required />
+
+      <label for="diretor">Diretor:</label>
+      <input type="text" id="diretor" name="diretor" placeholder="Nome do diretor" />
+
+      <label for="ano">Ano de Lançamento:</label>
+      <input type="number" id="ano" name="ano" placeholder="Ano (ex: 2014)" />
+
+      <label for="genero">Gênero:</label>
+      <input type="text" id="genero" name="genero" placeholder="Gênero (ex: Ficção Científica, Drama)" />
+
+      <label for="duracao">Duração (minutos):</label>
+      <input type="number" id="duracao" name="duracao" placeholder="Duração em minutos" />
+
+      <label for="elenco">Elenco Principal:</label>
+      <input type="text" id="elenco" name="elenco" placeholder="Atores principais (separados por vírgula)" />
+
+      <label for="classificacao">Classificação Indicativa:</label>
+      <input type="text" id="classificacao" name="classificacao" placeholder="Classificação (ex: 12 anos, Livre)" />
+
+      <label for="sinopse">Sinopse:</label>
+      <textarea id="sinopse" name="sinopse" placeholder="Breve resumo do filme"></textarea>
+
+      <label for="notaUsuario">Sua Nota (0 a 5):</label>
+      <input type="number" id="notaUsuario" name="notaUsuario" placeholder="Sua nota para o filme (ex: 3)" min="0" max="5" />
+      
+      <button type="submit">Salvar Filme</button>
+    </form>
+  </main>
+
+  <script type="module" src="../js/main.js"></script>
+</body>
+</html>
